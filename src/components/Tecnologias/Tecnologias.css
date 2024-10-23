@@ -1,0 +1,70 @@
+/* src/components/Tecnologias.css */
+
+/* Contenedor principal */
+.tecnologias-container {
+    width: 100%;
+    height: calc(100vh - 0px); /* Ajusta para no sobreponer con el navbar */
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../../assets/unach_edificio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra contenido verticalmente */
+    align-items: center; /* Centra contenido horizontalmente */
+}
+
+/* Estilo del título */
+.tecnologias-container h2 {
+    margin-bottom: 40px;
+    margin-top: -110px; /* Elimina el margen superior adicional del título */
+}
+
+/* Estilo de las tarjetas */
+.tecnologia-card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+}
+
+/* Hover effect */
+.tecnologia-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las imágenes */
+.tecnologia-img {
+    width: 70%;
+    max-width: 200px; /* Tamaño máximo para imágenes grandes */
+    margin: 20px auto;
+    display: block;
+}
+
+/* Títulos de las tarjetas */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Texto descriptivo */
+.card-text {
+    font-size: 0.95rem;
+    color: #000000; /* Mejor contraste en fondo oscuro */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .tecnologia-img {
+        width: 80%; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
+    }
+    .card-title {
+        font-size: 1.1rem; /* Tamaño de fuente más pequeño para móviles */
+    }
+    .card-text {
+        font-size: 0.85rem; /* Tamaño de fuente más pequeño para móviles */
+    }
+}

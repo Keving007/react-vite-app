@@ -1,0 +1,98 @@
+.local {
+    width: 100%;
+    min-height: 100vh; /* Cambiado para asegurar que ocupe al menos la altura de la ventana */
+    background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url('../assets/unach_edificio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Cambiado para apilar verticalmente el contenido */
+    align-items: center;
+    justify-content: flex-start; /* Cambiado para que los elementos se alineen en la parte superior */
+    padding: 10px; /* Agregado para dar espacio interno */
+}
+
+.local-text {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 40px; /* Añadido margen para separar de la sección de integrantes */
+}
+
+.local-text h1 {
+    font-size: 60px;
+    font-weight: 00;
+}
+
+.local-text p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+
+.integrantes {
+    margin-top: -30px;
+    text-align:center;
+    color: #fff; /* Cambia el color según tu diseño */
+}
+
+.integrantes h2 {
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+
+.integrantes-container {
+    display: flex;
+    justify-content:space-between; /* Centra las tarjetas horizontalmente */
+}
+
+.integrante-card {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px; /* Ajusta el tamaño de las tarjetas */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.integrante-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-img {
+    width: 100px; /* Ajusta el tamaño de las imágenes de perfil */
+    height: 100px; /* Ajusta el tamaño de las imágenes de perfil */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-bottom: 10px;
+}
+
+.integrante-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.integrante-card p {
+    font-size: 14px;
+    color: #ddd; /* Mejor contraste en fondo oscuro */
+}
+
+/* ------------ MEDIA QUERY ------------*/
+@media (max-width: 850px) {
+    .local-text h1 {
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .local-text p {
+        font-size: 14px;
+        margin: 15px auto 30px;
+    }
+
+    .integrante-card {
+        width: 90%; /* Ajusta el tamaño de las tarjetas en pantallas más pequeñas */
+    }
+}
